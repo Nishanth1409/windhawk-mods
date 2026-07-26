@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.user
+*.suo
+
+# Build artifacts (never commit Windhawk DLLs)
+*.dll
+*.pdb
+Engine/
+ModsWritable/

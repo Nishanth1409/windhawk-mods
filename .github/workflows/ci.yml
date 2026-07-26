@@ -1,0 +1,40 @@
+name: Validate
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure featured mods present
+        run: |
+          set -e
+          for d in lock-screen-wallpaper mic-tray-switch per-monitor-wallpaper taskbar-always-visible-fullscreen tray-audio-output; do
+            test -d "analysis/$d"
+            echo "OK $d"
+          done
+      - name: Validate JSON settings
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          bad = []
+          for p in pathlib.Path('analysis').rglob('*.json'):
+              try:
+                  json.loads(p.read_text(encoding='utf-8'))
+              except Exception as e:
+                  bad.append(f"{p}: {e}")
+          if bad:
+              print('\n'.join(bad)); sys.exit(1)
+          print(f"Validated {len(list(pathlib.Path('analysis').rglob('*.json')))} JSON files")
+          PY
+      - name: Block personal user paths
+        run: |
+          if grep -R "Users\\\\nisha\|Users/nisha\|C:\\\\Users\\\\nisha" analysis --include='*.json' --include='*.wh.json'; then
+            echo "Personal paths found in settings"; exit 1
+          fi
+          echo "No personal user paths in JSON"
