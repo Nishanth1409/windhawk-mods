@@ -10,3 +10,5 @@ Thumbs.db
 *.pdb
 Engine/
 ModsWritable/
+
+.cursor/
