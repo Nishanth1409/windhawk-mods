@@ -58,7 +58,7 @@ Requires **Settings → Personalization → Taskbar → Automatically hide the t
 
 ## Development notes
 
-- Local analysis tree: `C:\SystemMaintenance\windhawk\analysis`
+- Local analysis tree: `D:\Projects\tools\windhawk-mods\analysis`
 - Compiled DLLs appear under `C:\ProgramData\Windhawk\Engine\Mods\` as `local@<id>_…`
 - After changing settings in the Windhawk UI, re-export JSON into `analysis/<mod-id>/` to keep this repo current
 
