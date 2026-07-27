@@ -3,9 +3,10 @@
 Custom and curated **[Windhawk](https://windhawk.net/)** mods for Windows 11 shell, tray audio/mic, wallpapers, and taskbar behavior.
 
 **Author:** [Nishanth K R](https://github.com/Nishanth1409) · Portfolio [nkrportfolio.vercel.app](https://nkrportfolio.vercel.app)  
-**Related toolkit:** [windows-system-maintenance](https://github.com/Nishanth1409/windows-system-maintenance)
+**Related toolkit (Windows cleanup/menu — no mods here):** [windows-system-maintenance](https://github.com/Nishanth1409/windows-system-maintenance)
 
-> Sources and settings are synced from local Windhawk development under `C:\SystemMaintenance\windhawk` and runtime installs under `C:\ProgramData\Windhawk`. Personal image paths in settings JSON are sanitized to placeholders.
+> **Canonical Windhawk folder:** `D:\Projects\tools\windhawk-mods` (this repo).  
+> Runtime installs still live under `C:\ProgramData\Windhawk`. Personal image paths in settings JSON are sanitized to placeholders.
 
 ---
 
