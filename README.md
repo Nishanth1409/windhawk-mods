@@ -1,6 +1,6 @@
 # Windhawk Mods — Nishanth K R
 
-Custom and curated **[Windhawk](https://windhawk.net/)** mods for Windows 11 shell, tray audio/mic, wallpapers, and taskbar behavior.
+Custom **[Windhawk](https://windhawk.net/)** mods for Windows 11 shell, tray audio/mic, wallpapers, and taskbar behavior.
 
 **Author:** [Nishanth K R](https://github.com/Nishanth1409) · Portfolio [nkrportfolio.vercel.app](https://nkrportfolio.vercel.app)  
 **Related toolkit (Windows cleanup/menu — no mods here):** [windows-system-maintenance](https://github.com/Nishanth1409/windows-system-maintenance)
@@ -10,7 +10,7 @@ Custom and curated **[Windhawk](https://windhawk.net/)** mods for Windows 11 she
 
 ---
 
-## Featured mods (authored / heavily customized)
+## Mods
 
 | Mod | Version | What it does |
 | :--- | :--- | :--- |
@@ -20,21 +20,13 @@ Custom and curated **[Windhawk](https://windhawk.net/)** mods for Windows 11 she
 | **[Taskbar Auto-Hide Peek in Fullscreen](analysis/taskbar-always-visible-fullscreen)** | 1.2.3 | Auto-hide edge peek (mouse to bottom) works in fullscreen apps — same as a normal window |
 | **[Tray Audio Output](analysis/tray-audio-output)** | 1.5.8 | System tray audio: pick output, volume, scroll to switch, share to multiple speakers (WASAPI mirror). Auto device list with smart Bluetooth limits |
 
-Each featured folder includes:
+Each folder includes:
 
 | File | Role |
 | :--- | :--- |
 | `*.cpp` / `*.wh.cpp` | Mod source — paste into Windhawk → Compile |
 | `*.bak` | Source backup snapshot |
 | `*.json` / `*.wh.json` | Settings backup (placeholder paths) |
-
----
-
-## Full catalog (`analysis/`)
-
-40 mod folders covering taskbar stylers, Explorer tweaks, Start menu, notifications, translucency, Alt+Tab per monitor, clipboard, and more. See the table in the archived System Maintenance Windhawk guide, or browse [`analysis/`](analysis/).
-
-Community-origin mods may retain upstream licenses (check headers). Featured SystemMaintenance mods use **MIT** unless noted.
 
 ---
 
@@ -66,4 +58,4 @@ Requires **Settings → Personalization → Taskbar → Automatically hide the t
 
 ## License
 
-MIT for mods authored under SystemMaintenance / Nishanth K R. Upstream community mods: see each file’s `@license` header.
+MIT for mods authored under SystemMaintenance / Nishanth K R.
