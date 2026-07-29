@@ -61,6 +61,7 @@ Browse all mods under [`analysis/`](analysis/).
 
 - **Tray Audio / Mic Tray** run as tool mods (`windhawk.exe`). Check the hidden tray overflow if the icon is missing.  
 - **Taskbar peek in fullscreen** needs *Settings → Personalization → Taskbar → Automatically hide the taskbar*.  
+- After you **move a game** (for example Riot / VALORANT), update that mod’s **Excluded folders** setting to the new install path, then recompile / reload the mod so fullscreen peek stays disabled for those apps.  
 - Community mods may keep upstream licenses — check file headers.
 
 ## License

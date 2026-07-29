@@ -28,7 +28,7 @@ and browsers (not just F11).
 - Raises the taskbar above fullscreen content while peeked
 - When the mouse leaves, hide works at normal auto-hide speed
 - Auto-hide **OFF** → mod does nothing
-- Apps under **C:\\Riot Games** are excluded by default (VALORANT, League, etc.)
+- Apps under **D:\\Games\\Riot Games** are excluded by default (VALORANT, League, etc.)
 
 ## Setup
 
@@ -54,11 +54,11 @@ and browsers (not just F11).
   $description: >-
     How often to check the mouse while auto-hide is ON. Lower = snappier peek.
 - excludedFolders:
-  - "C:\\Riot Games"
+  - "D:\\Games\\Riot Games"
   $name: Excluded folders
   $description: >-
     Do not peek the taskbar when the foreground app lives under any of these
-    folders (all subfolders / .exe files). Example: C:\Riot Games.
+    folders (all subfolders / .exe files). Example: D:\Games\Riot Games.
 - oldTaskbarOnWin11: false
   $name: Old taskbar on Windows 11
   $description: Enable with ExplorerPatcher / Windows 10-style taskbar on Windows 11.
@@ -1000,7 +1000,7 @@ void LoadSettings() {
     }
 
     // Always keep Riot Games excluded even if settings list is empty/corrupt.
-    const std::wstring riot = L"c:\\riot games";
+    const std::wstring riot = L"d:\\games\\riot games";
     bool hasRiot = false;
     for (const std::wstring& folder : g_settings.excludedFolders) {
         if (folder == riot) {
