@@ -14,10 +14,20 @@ jobs:
       - name: Ensure featured mods present
         run: |
           set -e
-          for d in lock-screen-wallpaper mic-tray-switch per-monitor-wallpaper taskbar-always-visible-fullscreen tray-audio-output; do
+          for d in lock-screen-wallpaper mic-tray-switch per-monitor-wallpaper taskbar-always-visible-fullscreen translucent-windows tray-audio-output; do
             test -d "analysis/$d"
             echo "OK $d"
           done
+          # Each mod lives in its own folder — no loose sources at analysis/
+          if ls analysis/*.* >/dev/null 2>&1; then
+            echo "Loose files under analysis/ (each mod needs its own folder):"
+            ls -1 analysis/*.*
+            exit 1
+          fi
+          test -f analysis/translucent-windows/translucent-windows.wh.cpp
+          test -f analysis/translucent-windows/translucent-windows.wh.cpp.bak
+          test -f analysis/translucent-windows/translucent-windows.wh.json
+          echo "OK translucent-windows files"
       - name: Validate JSON settings
         run: |
           python - <<'PY'

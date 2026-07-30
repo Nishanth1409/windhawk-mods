@@ -49,9 +49,12 @@ Compiled engine files are managed by Windhawk under its ProgramData engine folde
 | Mic Tray Switch & Control | `analysis/mic-tray-switch` | Tray mic list, gain, mute, preferred devices |
 | Per-Monitor Wallpaper | `analysis/per-monitor-wallpaper` | Wallpapers on extended monitors only |
 | Taskbar Auto-Hide Peek in Fullscreen | `analysis/taskbar-always-visible-fullscreen` | Edge peek works in fullscreen |
+| Translucent Windows | `analysis/translucent-windows` | Native translucent effects (Explorer + Settings) |
 | Tray Audio Output | `analysis/tray-audio-output` | Tray outputs, volume, scroll switch, mirror |
 
 Each folder typically has: source (`.cpp` / `.wh.cpp`), `.bak` snapshot, settings JSON.
+
+**Translucent Windows** is upstream by [Undisputed00x](https://github.com/Undisputed00x); this copy narrows `@include` to `explorer.exe` and `SystemSettings.exe`. The `.bak` file is the original 1.8.0 with `@include *`.
 
 Browse all mods under [`analysis/`](analysis/).
 
