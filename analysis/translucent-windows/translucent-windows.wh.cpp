@@ -6,7 +6,6 @@
 // @author          Undisputed00x
 // @github          https://github.com/Undisputed00x
 // @include         explorer.exe
-// @include         SystemSettings.exe
 // @compilerOptions -ldwmapi -luxtheme -lcomctl32 -lgdi32 -ld2d1 -lmsimg32 -lshcore -lversion -ffp-exception-behavior=maytrap
 // ==/WindhawkMod==
 
@@ -627,11 +626,14 @@ BOOL InTaskManagerProcess() {
 }
 
 // Only these processes may be customized. GetCurrProcStr() lowercases the name.
-// Add further entries here to widen the scope.
+// Add further entries here to widen the scope. SystemSettings.exe used to be
+// here, but the Settings window is a UWP app whose XAML is opaque, so none of
+// these frame level effects were ever visible in it; Settings Styler (no XAML
+// diagnostics) covers that window instead.
 BOOL IsAllowedProcess() {
     static const BOOL allowed = []() -> BOOL {
         const std::wstring proc = GetCurrProcStr();
-        return (proc == L"explorer.exe" || proc == L"systemsettings.exe") ? TRUE : FALSE;
+        return (proc == L"explorer.exe") ? TRUE : FALSE;
     }();
     return allowed;
 }

@@ -14,7 +14,7 @@ jobs:
       - name: Ensure featured mods present
         run: |
           set -e
-          for d in lock-screen-wallpaper mic-tray-switch per-monitor-wallpaper taskbar-always-visible-fullscreen translucent-windows tray-audio-output; do
+          for d in lock-screen-wallpaper mic-tray-switch per-monitor-wallpaper settings-styler-safe taskbar-always-visible-fullscreen translucent-windows tray-audio-output; do
             test -d "analysis/$d"
             echo "OK $d"
           done
@@ -28,6 +28,10 @@ jobs:
           test -f analysis/translucent-windows/translucent-windows.wh.cpp.bak
           test -f analysis/translucent-windows/translucent-windows.wh.json
           echo "OK translucent-windows files"
+          test -f analysis/settings-styler-safe/settings-styler-safe.wh.cpp
+          test -f analysis/settings-styler-safe/settings-styler-safe.wh.json
+          test -f analysis/settings-styler-safe/apply-settings.reg
+          echo "OK settings-styler-safe files"
       - name: Validate JSON settings
         run: |
           python - <<'PY'
