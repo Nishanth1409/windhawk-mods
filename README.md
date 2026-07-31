@@ -9,6 +9,8 @@
 [![C++](https://img.shields.io/badge/C%2B%2B-Windhawk-00599C?logo=cplusplus&logoColor=white)](https://isocpp.org/)
 [![License](https://img.shields.io/badge/license-MIT%20%2B%20upstream-informational)](#license)
 
+[**Live site →**](https://nishanth1409.github.io/windhawk-mods/)
+
 </div>
 
 <div align="center">
@@ -130,10 +132,42 @@ MIT for mods authored by Nishanth K R unless noted. Upstream community mods: see
 
 ---
 
+## Project site
+
+A full walkthrough is published as a project site — the feature set, preview panels, and the
+install guide, all on one page.
+
+<div align="center">
+  <img src="docs/screenshots/site-devices.png" alt="Windhawk Mods project site on television, laptop, and phone" width="100%" />
+  <p><em>The project site on television, laptop, and phone.</em></p>
+</div>
+
+| Laptop · 1440 × 900 | Phone · 390 × 844 |
+| :---: | :---: |
+| <img src="docs/screenshots/site-laptop.png" alt="Project site on a laptop" /> | <img src="docs/screenshots/site-phone.png" alt="Project site on a phone" /> |
+
+<div align="center">
+  <img src="docs/screenshots/site-features.png" alt="Feature overview" width="100%" />
+  <p><em>Every feature, one card at a time.</em></p>
+</div>
+
+<div align="center">
+  <img src="docs/screenshots/site-preview.png" alt="Preview panels" width="100%" />
+  <p><em>Preview panels — what it looks like in use.</em></p>
+</div>
+
+<div align="center">
+  <img src="docs/screenshots/site-install.png" alt="Install steps" width="100%" />
+  <p><em>The install guide, step by step.</em></p>
+</div>
+
+---
+
 ## Live & credits
 
 | | |
 | :--- | :--- |
+| **Live** | [nishanth1409.github.io/windhawk-mods](https://nishanth1409.github.io/windhawk-mods/) |
 | **Author** | [Nishanth K R](https://github.com/Nishanth1409) |
 | **Repo** | [Nishanth1409/windhawk-mods](https://github.com/Nishanth1409/windhawk-mods) |
 | **Upstream credits** | [Undisputed00x](https://github.com/Undisputed00x) (Translucent Windows) · [m417z](https://github.com/m417z) (Windows 11 Settings Styler / GPL-3.0) |
