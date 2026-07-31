@@ -130,10 +130,22 @@ MIT for mods authored by Nishanth K R unless noted. Upstream community mods: see
 
 ---
 
+## Live & credits
+
+| | |
+| :--- | :--- |
+| **Author** | [Nishanth K R](https://github.com/Nishanth1409) |
+| **Repo** | [Nishanth1409/windhawk-mods](https://github.com/Nishanth1409/windhawk-mods) |
+| **Upstream credits** | [Undisputed00x](https://github.com/Undisputed00x) (Translucent Windows) · [m417z](https://github.com/m417z) (Windows 11 Settings Styler / GPL-3.0) |
+| **Portfolio** | [nkrportfolio.vercel.app](https://nkrportfolio.vercel.app) |
+
+---
+
 <div align="center">
 
-Made with care by **Nishanth K R** — *son of a farmer, always a farmer.*
+*Son of a farmer · always a farmer.*
 
-[Portfolio](https://nkrportfolio.vercel.app) · [GitHub](https://github.com/Nishanth1409)
+[GitHub](https://github.com/Nishanth1409) · [Portfolio](https://nkrportfolio.vercel.app)
 
 </div>
+
